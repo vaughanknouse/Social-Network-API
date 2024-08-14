@@ -52,7 +52,7 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 - **Mongoose**: An ODM (Object Data Modeling) library for MongoDB that facilitates data modeling, schema validation, and seamless interaction with the MongoDB database.
 - **Nodemon**: A development tool that automatically restarts the Node.js server when file changes are detected, improving development workflow and efficiency.
 - **Insomnia**: A powerful API client used to test and interact with the API endpoints, allowing developers to send HTTP requests and view responses in various formats.
-- **JavaScript `Date` Object**: Utilized for generating and formatting timestamps, ensuring accurate and consistent date/time data throughout the application.
+- **Moment.js**: A popular JavaScript library used for parsing, validating, manipulating, and formatting dates and times, ensuring accurate and consistent handling of timestamp data throughout the application.
 
 ## Features
 
