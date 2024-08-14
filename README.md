@@ -51,8 +51,8 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 - **MongoDB**: A flexible NoSQL database used to store and manage user, thought, and reaction data in a document-oriented format.
 - **Mongoose**: An ODM (Object Data Modeling) library for MongoDB that facilitates data modeling, schema validation, and seamless interaction with the MongoDB database.
 - **Nodemon**: A development tool that automatically restarts the Node.js server when file changes are detected, improving development workflow and efficiency.
-- **Insomnia**: A powerful API client used to test and interact with the API endpoints, allowing developers to send HTTP requests and view responses in various formats.
 - **Moment.js**: A popular JavaScript library used for parsing, validating, manipulating, and formatting dates and times, ensuring accurate and consistent handling of timestamp data throughout the application.
+- **Insomnia**: A powerful API client used to test and interact with the API endpoints, allowing developers to send HTTP requests and view responses in various formats.
 
 ## Features
 
@@ -95,10 +95,9 @@ To install the NoSQL Social Network API, follow these steps:
 
 After completing the installation, follow these steps to use the NoSQL Social Network API:
 
-1. **Seed the Database**: Populate the database with initial data by running: `npm run seed`.
-2. **Start the Server**: Launch the server with the following command: `npm start`.
-3. **Enable Auto-Restart**: If you want the server to automatically restart whenever changes are saved, run: `npm run dev`.
-4. **API Route Testing**: For detailed instructions on testing API routes using Insomnia, refer to the "Tests" section of this `README.md`.
+1. **Start the Server**: Launch the server with the following command: `npm start`.
+2. **Enable Auto-Restart**: If you want the server to automatically restart whenever changes are saved, run: `npm run dev`.
+3. **API Route Testing**: For detailed instructions on testing API routes using Insomnia, refer to the "Tests" section of this `README.md`.
 
 ### Screenshots: \*\*\*
 
@@ -159,6 +158,8 @@ Used the following sources as tutorials and guidelines:
 [MongoDB documentation](https://www.mongodb.com/docs/manual/)
 
 [Mongoose documentation](https://mongoosejs.com/docs/index.html)
+
+[Moment.js documentation](https://momentjs.com/)
 
 [freeCodeCamp: Introduction to Mongoose for MongoDB
 ](https://www.freecodecamp.org/news/introduction-to-mongoose-for-mongodb-d2a7aa593c57/)
