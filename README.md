@@ -46,46 +46,63 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 ## Technologies Used
 
-- **Node.js**: JavaScript backend runtime environment for building server-side applications.
-- **Express.js**: Framework for building web applications and handling routes.
-- **MongoDB**: NoSQL database for storing user and thought data.
-- **Mongoose**: Object Data Modeling (ODM) library for MongoDB and Node.js, providing schema-based data modeling.
-- **Nodemon**: Tool for automatically restarting the server during development.
-- **Insomnia**: API client for route testing.
-- **JavaScript `Date` Object**: For handling and formatting timestamps.
+- **Node.js**: Provides the server-side environment to run JavaScript code, enabling the development of scalable and high-performance applications.
+- **Express.js**: A fast, minimalist web framework for Node.js, used to create and manage routes for API endpoints and handle HTTP requests/responses efficiently.
+- **MongoDB**: A flexible NoSQL database used to store and manage user, thought, and reaction data in a document-oriented format.
+- **Mongoose**: An ODM (Object Data Modeling) library for MongoDB that facilitates data modeling, schema validation, and seamless interaction with the MongoDB database.
+- **Nodemon**: A development tool that automatically restarts the Node.js server when file changes are detected, improving development workflow and efficiency.
+- **Insomnia**: A powerful API client used to test and interact with the API endpoints, allowing developers to send HTTP requests and view responses in various formats.
+- **JavaScript `Date` Object**: Utilized for generating and formatting timestamps, ensuring accurate and consistent date/time data throughout the application.
 
 ## Features
 
-- **User Management**: Retrieve all users; create, update, and delete users; manage a user's friend list.
-- **Thought Management**: Retrieve all thoughts posted by users; create, update, and delete thoughts; manage reactions associated with specific thoughts.
-- **Reaction Management**: Retrieve all reactions for a specific thought; add and remove reactions to thoughts.
-- **Friend List**: Add and remove friends from a user's friend list.
-- **NoSQL Database:** Uses MongoDB for handling large amounts of unstructured data efficiently.
+- **User Management**:
+
+  - Provides comprehensive control over user accounts, including the ability to retrieve a list of all users, create new users, update existing user details, and delete users from the database.
+  - Includes friend list management, allowing users to build, maintain, and manage their list of friends, reflecting real-world social networks.
+
+- **Thought Management**:
+
+  - Enables users to share their thoughts with the community by creating, updating, or deleting thoughts.
+  - Offers the ability to retrieve thoughts posted by any user, facilitating the viewing and interaction with user-generated content.
+
+- **Reaction Management**:
+
+  - Allows users to engage with specific thoughts by adding reactions, similar to likes or comments in a typical social network.
+  - Reactions can be added or removed, providing dynamic interaction between users.
+
+- **Friend List Management**:
+
+  - Users can enhance their social connections by adding friends to their friend list, enabling easy access to friends' thoughts and interactions.
+  - Friendships can be managed by adding or removing friends from a user's list, keeping the network relevant and up-to-date.
+
+- **NoSQL Database**:
+
+  - Leverages MongoDB to handle large amounts of unstructured data efficiently, providing flexibility in data storage and retrieval.
+  - The schema-less nature of MongoDB allows for rapid development and scalability, essential for growing social networks.
 
 ## Installation
 
-To install the NoSQL Social Network API, follow the following steps:
+To install the NoSQL Social Network API, follow these steps:
 
-1. Clone the repository to your local machine: `https://github.com/vaughanknouse/Social-Network-API.git`.
-2. Navigate to the project directory by typing `cd Social-Network-API` in the terminal.
-3. Install the necessary dependencies by typing `npm install` in the command line.
-4. Ensure that MongoDB is installed on your machine to initialize the database.
-   - If not yet installed, visit the [MongoDB installation guide on The Full-Stack Blog](https://coding-boot-camp.github.io/full-stack/mongodb/how-to-install-mongodb).
-5. Ensure that Insomnia is also installed on your machine for API route testing.
-   - If not yet installed, visit the [Insomnia download page](https://insomnia.rest/download).
+1. **Clone the Repository**: Clone the repository to your local machine using the following command: `git clone https://github.com/vaughanknouse/Social-Network-API.git`.
+2. **Navigate to the Project Directory**: Change into the project directory: `cd Social-Network-API`.
+3. **Install Dependencies**: Install the necessary dependencies by running: `npm install`.
+4. **Install MongoDB**: Ensure that MongoDB is installed on your machine to initialize the database. If MongoDB is not yet installed, refer to the [MongoDB installation guide on The Full-Stack Blog](https://coding-boot-camp.github.io/full-stack/mongodb/how-to-install-mongodb).
+5. **Install Insomnia**: Ensure that Insomnia or a similar API client for route testing is also installed on your machine. If not yet installed, download Insomnia from the [Insomnia download page](https://insomnia.rest/download).
 
 ## Usage
 
-Once everything is installed, to use the NoSQL Social Network API, follow the following steps:
+After completing the installation, follow these steps to use the NoSQL Social Network API:
 
-1. Seed the database by entering `npm run seed` in the terminal.
-2. Start the server by typing `npm start` in the terminal.
-3. Run `npm run dev` to have the server automatically restart whenever changes are saved.
-4. For API route testing instructions using Insomnia, navigate to the "Tests" section of the README.
+1. **Seed the Database**: Populate the database with initial data by running: `npm run seed`.
+2. **Start the Server**: Launch the server with the following command: `npm start`.
+3. **Enable Auto-Restart**: If you want the server to automatically restart whenever changes are saved, run: `npm run dev`.
+4. **API Route Testing**: For detailed instructions on testing API routes using Insomnia, refer to the "Tests" section of this `README.md`.
 
 ### Screenshots: \*\*\*
 
-The following screenshots demonstrate the application's API routes being tested in Insomnia.
+The following screenshots demonstrate the application's API routes being tested in Insomnia:
 
 **GET route to retrieve all users:**
 
@@ -131,9 +148,9 @@ Use Insomnia or a similar API client to test the following API routes:
 
 ## Links \*\*\*
 
-**GitHub Repository**: <https://github.com/vaughanknouse/Social-Network-API>
+**GitHub Repository**: [Social Network API](https://github.com/vaughanknouse/Social-Network-API)
 
-**Walkthrough Video** demonstrating the functionality of the API: \*\*\*
+**Walkthrough Video**: [View the Walkthrough Video demo](***link***)
 
 ## Credits
 
