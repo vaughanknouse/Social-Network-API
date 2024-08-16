@@ -1,26 +1,23 @@
-# NoSQL: Social Network API
+# NoSQL: Social Network API <!-- omit in toc -->
 
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
-## Description \*\*\*
+## Description \*\*\* <!-- omit in toc -->
 
-## Table of Contents
+## Table of Contents <!-- omit in toc -->
 
-- [NoSQL: Social Network API](#nosql-social-network-api)
-  - [Description \*\*\*](#description-)
-  - [Table of Contents](#table-of-contents)
-  - [User Story](#user-story)
-  - [Acceptance Criteria](#acceptance-criteria)
-  - [Technologies Used](#technologies-used)
-  - [Features](#features)
-  - [Installation](#installation)
-  - [Usage](#usage)
-    - [Screenshots: \*\*\*](#screenshots-)
-  - [Tests](#tests)
-  - [Links \*\*\*](#links-)
-  - [Credits](#credits)
-  - [License](#license)
-  - [Questions](#questions)
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Screenshots: \*\*\*](#screenshots-)
+- [Tests](#tests)
+- [Links \*\*\*](#links-)
+- [Credits](#credits)
+- [License](#license)
+- [Questions](#questions)
 
 ## User Story
 
@@ -85,9 +82,24 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 To install the NoSQL Social Network API, follow these steps:
 
-1. **Clone the Repository**: Clone the repository to your local machine using the following command: `git clone https://github.com/vaughanknouse/Social-Network-API.git`.
-2. **Navigate to the Project Directory**: Change into the project directory: `cd Social-Network-API`.
-3. **Install Dependencies**: Install the necessary dependencies by running: `npm install`.
+1. **Clone the Repository**:
+
+   ```bash
+   git clone https://github.com/vaughanknouse/Social-Network-API.git
+   ```
+
+2. **Navigate to the Project Directory**:
+
+   ```bash
+    cd Social-Network-API
+   ```
+
+3. **Install Dependencies**:
+
+   ```bash
+   npm install
+   ```
+
 4. **Install MongoDB**: Ensure that MongoDB is installed on your machine to initialize the database. If MongoDB is not yet installed, refer to the [MongoDB installation guide on The Full-Stack Blog](https://coding-boot-camp.github.io/full-stack/mongodb/how-to-install-mongodb).
 5. **Install Insomnia**: Ensure that Insomnia or a similar API client for route testing is also installed on your machine. If not yet installed, download Insomnia from the [Insomnia download page](https://insomnia.rest/download).
 
@@ -95,8 +107,18 @@ To install the NoSQL Social Network API, follow these steps:
 
 After completing the installation, follow these steps to use the NoSQL Social Network API:
 
-1. **Start the Server**: Launch the server with the following command: `npm start`.
-2. **Enable Auto-Restart**: If you want the server to automatically restart whenever changes are saved, run: `npm run dev`.
+1. **Start the server**:
+
+   ```bash
+    npm start
+   ```
+
+2. **Enable Auto-Restart**: If you want the server to automatically restart whenever changes are saved.
+
+   ```bash
+   npm run dev
+   ```
+
 3. **API Route Testing**: For detailed instructions on testing API routes using Insomnia, refer to the "Tests" section of this `README.md`.
 
 ### Screenshots: \*\*\*
