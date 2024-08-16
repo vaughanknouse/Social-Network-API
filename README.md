@@ -107,33 +107,49 @@ To install the NoSQL Social Network API, follow these steps:
 
 After completing the installation, follow these steps to use the NoSQL Social Network API:
 
-1. **Start the server**:
+1. **Start the server**: Invoke the application using the following command:
 
    ```bash
     npm start
    ```
 
-2. **Enable Auto-Restart**: If you want the server to automatically restart whenever changes are saved.
+   - **Note**: If you want the server to automatically restart whenever changes are saved, run the following command instead:
 
-   ```bash
-   npm run dev
-   ```
+     ```bash
+     npm run dev
+     ```
 
-3. **API Route Testing**: For detailed instructions on testing API routes using Insomnia, refer to the "Tests" section of this `README.md`.
+2. **API Route Testing**: For detailed instructions on testing API routes using Insomnia, refer to the "Tests" section of this `README.md`.
 
 ### Screenshots: \*\*\*
 
-The following screenshots demonstrate the application's API routes being tested in Insomnia:
+The following screenshots demonstrate the application's functionality and appearance:
 
-**GET route to retrieve all users:**
+**Mongoose models synced with the MongoDB database in MongoDB Compass**:
+
+MongoDB Compass showing the synced `socialmediaDB` database with `users` and `thoughts` models:
+
+![Shows Mongoose models synced with the MongoDB database in MongoDB Compass.](assets/images/compass-database-screenshot.png)
+
+MongoDB Compass showing `users` model data within the `socialmediaDB` database:
+
+![Shows users model within the database in MongoDB Compass.](assets/images/compass-users-screenshot.png)
+
+MongoDB Compass showing `thoughts` model data within the `socialmediaDB` database:
+
+![Shows thoughts model within the database in MongoDB Compass.](assets/images/compass-thoughts-screenshot.png)
+
+**Some of the API routes being tested in Insomnia:**
+
+GET route to retrieve all users:
 
 ![Shows GET route to retrieve all users.](assets/images/GET-users-screenshot.png)
 
-**POST route to add a friend to a user's friend list:**
+POST route to add a friend to a user's friend list:
 
 ![Shows POST route to add a friend to a user's friend list.](assets/images/POST-friend-screenshot.png)
 
-**POST route to add a reaction to a thought:**
+POST route to add a reaction to a thought:
 
 ![Shows POST route to add a reaction to a thought.](assets/images/POST-reaction-screenshot.png)
 
@@ -169,9 +185,9 @@ Use Insomnia or a similar API client to test the following API routes:
 
 ## Links \*\*\*
 
-**GitHub Repository**: [Social Network API](https://github.com/vaughanknouse/Social-Network-API)
+**GitHub Repository**: <https://github.com/vaughanknouse/Social-Network-API>
 
-**Walkthrough Video**: [View the Walkthrough Video demo](***link***)
+**Walkthrough Video**: \*\*\*
 
 ## Credits
 
