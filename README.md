@@ -113,43 +113,36 @@ After completing the installation, follow these steps to use the NoSQL Social Ne
     npm start
    ```
 
-   - **Note**: If you want the server to automatically restart whenever changes are saved, run the following command instead:
-
-     ```bash
-     npm run dev
-     ```
+   > [!NOTE]
+   > If you want the server to automatically restart whenever changes are saved, use the command `npm run dev` instead:
 
 2. **API Route Testing**: For detailed instructions on testing API routes using Insomnia, refer to the "Tests" section of this `README.md`.
 
 ### Screenshots: \*\*\*
 
-The following screenshots demonstrate the application's functionality and appearance:
+The following screenshots demonstrate the Mongoose models synced with the MongoDB database in MongoDB Compass as well as examples of the API routes being tested in Insomnia:
 
-**Mongoose models synced with the MongoDB database in MongoDB Compass**:
-
-MongoDB Compass showing the synced `socialmediaDB` database with `users` and `thoughts` models:
+**MongoDB Compass showing the synced `socialmediaDB` database with `users` and `thoughts` models:**
 
 ![Shows Mongoose models synced with the MongoDB database in MongoDB Compass.](assets/images/compass-database-screenshot.png)
 
-MongoDB Compass showing `users` model data within the `socialmediaDB` database:
+**MongoDB Compass showing `users` model data within the `socialmediaDB` database:**
 
 ![Shows users model within the database in MongoDB Compass.](assets/images/compass-users-screenshot.png)
 
-MongoDB Compass showing `thoughts` model data within the `socialmediaDB` database:
+**MongoDB Compass showing `thoughts` model data within the `socialmediaDB` database:**
 
 ![Shows thoughts model within the database in MongoDB Compass.](assets/images/compass-thoughts-screenshot.png)
 
-**Some of the API routes being tested in Insomnia:**
-
-GET route to retrieve all users:
+**GET route to retrieve all users:**
 
 ![Shows GET route to retrieve all users.](assets/images/GET-users-screenshot.png)
 
-POST route to add a friend to a user's friend list:
+**POST route to add a friend to a user's friend list:**
 
 ![Shows POST route to add a friend to a user's friend list.](assets/images/POST-friend-screenshot.png)
 
-POST route to add a reaction to a thought:
+**POST route to add a reaction to a thought:**
 
 ![Shows POST route to add a reaction to a thought.](assets/images/POST-reaction-screenshot.png)
 
