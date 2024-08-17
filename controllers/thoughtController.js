@@ -20,7 +20,9 @@ module.exports = {
   // Get a single thought by id
   async getSingleThought(req, res) {
     try {
-      const thought = await Thought.findOne({ _id: req.params.thoughtId });
+      const thought = await Thought.findOne({
+        _id: req.params.thoughtId,
+      });
 
       // If no thought is found, send a 404 status with a message
       if (!thought) {
@@ -42,18 +44,23 @@ module.exports = {
   async createThought(req, res) {
     try {
       const thought = await Thought.create(req.body);
+
       const user = await User.findOneAndUpdate(
         { username: req.body.username },
         { $push: { thoughts: thought._id } },
-        { runValidators: true, new: true }
+        { new: true }
       );
+
       if (!user) {
-        return res.status(404).json({ message: 'Associated user not found!' });
+        return res.status(404).json({
+          message: 'Thought created, but no user found with this id!',
+        });
       }
+
       res.json(thought);
     } catch (err) {
       console.log(err);
-      res.status(500).json({ error: err.message });
+      res.status(500).json({ error: `Error creating thought: ${err.message}` });
     }
   },
 
@@ -73,11 +80,11 @@ module.exports = {
       res.json(thought);
     } catch (err) {
       console.log(err);
-      res.status(500).json({ error: err.message });
+      res.status(500).json({ error: `Error updating thought: ${err.message}` });
     }
   },
 
-  // Remove a thought by id and its reference from the associated user
+  // Delete a thought by id and its the associated user
   async deleteThought(req, res) {
     try {
       const thought = await Thought.findOneAndDelete({
@@ -91,17 +98,19 @@ module.exports = {
 
       // Remove the thought reference from the user's thoughts array
       await User.findOneAndUpdate(
-        { username: thought.username }, // Assuming the thought model has a userId field linking it to the user
+        { username: thought.username },
         { $pull: { thoughts: req.params.thoughtId } },
         { new: true, runValidators: true }
       );
 
       res.json({
-        message: 'Thought and its reference from user removed successfully!',
+        message: 'Thought and its reference from user successfully deleted!',
       });
     } catch (err) {
       console.log(err);
-      res.status(500).json({ error: err.message });
+      res.status(500).json({
+        error: `Error deleting thought and its reference from user: ${err.message}`,
+      });
     }
   },
 
@@ -121,7 +130,9 @@ module.exports = {
       res.json({ message: 'Successfully added new reaction!' });
     } catch (err) {
       console.log(err);
-      res.status(500).json({ error: err.message });
+      res
+        .status(500)
+        .json({ error: `Error adding new reaction: ${err.message}` });
     }
   },
 
@@ -137,10 +148,12 @@ module.exports = {
         res.status(404).json({ message: 'No thought found with this id!' });
         return;
       }
-      res.json({ message: 'Reaction removed successfully!' });
+      res.json({ message: 'Reaction successfully deleted!' });
     } catch (err) {
       console.log(err);
-      res.status(500).json({ error: err.message });
+      res
+        .status(500)
+        .json({ error: `Error deleting reaction: ${err.message}` });
     }
   },
 };
