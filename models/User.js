@@ -26,14 +26,14 @@ const userSchema = new Schema(
     thoughts: [
       {
         type: Schema.Types.ObjectId, // Data type is ObjectId
-        ref: 'thought', // Reference to the Thought model
+        ref: 'Thought', // Reference to the Thought model
       },
     ],
     // Field for the user's friends, which is an array of ObjectIds referencing the User model (self-reference)
     friends: [
       {
         type: Schema.Types.ObjectId, // Data type is ObjectId
-        ref: 'user', // Self-reference to the User model
+        ref: 'User', // Self-reference to the User model
       },
     ],
   },
@@ -52,7 +52,7 @@ userSchema.virtual('friendCount').get(function () {
 });
 
 // Create the User model using the defined schema
-const User = model('user', userSchema);
+const User = model('User', userSchema);
 
 // Export the User model
 module.exports = User;
