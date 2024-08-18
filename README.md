@@ -2,7 +2,15 @@
 
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
-## Description \*\*\* <!-- omit in toc -->
+## Description <!-- omit in toc -->
+
+In response to the growing demand for scalable and flexible backend solutions in social media platforms, this week’s challenge from the UT Austin Coding Boot Camp involves building a Social Network API from scratch using NoSQL technology. Built with Express.js, MongoDB, and Mongoose ODM, this API allows users to share thoughts, react to posts, and manage friend lists, offering robust support for complex relationships and dynamic data interactions.
+
+Designed with RESTful principles, this API supports full CRUD operations for users, thoughts, reactions, and friendships, efficiently managing large volumes of unstructured data. Users can create accounts, post thoughts, add friends, and interact with other users’ content. By leveraging Mongoose ODM and MongoDB, the API adapts to the fluid nature of social interactions while ensuring consistent data retrieval and updates through asynchronous operations.
+
+The motivation behind this project was to address the complexities of managing large volumes of unstructured data in a social networking context, particularly real-time interactions and diverse content types essential for modern social media. The NoSQL Social Network API meets these challenges, streamlining the management of user data, posts, reactions, and connections.
+
+Overall, as a foundational tool for building scalable and efficient social networking applications, this API handles the complexities of user data, interactions, and connections typical of modern social networks.
 
 ## Table of Contents <!-- omit in toc -->
 
@@ -14,7 +22,7 @@
 - [Usage](#usage)
   - [Screenshots:](#screenshots)
 - [Tests](#tests)
-- [Links \*\*\*](#links-)
+- [Links](#links)
 - [Credits](#credits)
 - [License](#license)
 - [Questions](#questions)
@@ -183,11 +191,11 @@ Use Insomnia or a similar API client to test the following API routes:
   - POST `/api/thoughts/:thoughtId/reactions`: Create and add a reaction to a thought.
   - DELETE `/api/thoughts/:thoughtId/reactions/:reactionId`: Remove a reaction from a thought by its `_id`.
 
-## Links \*\*\*
+## Links
 
-**GitHub Repository**: <https://github.com/vaughanknouse/Social-Network-API>
+GitHub Repository: <https://github.com/vaughanknouse/Social-Network-API>
 
-**Walkthrough Video**: \*\*\*
+Walkthrough Video: <https://drive.google.com/file/d/105pVmlPufGvbNxV1hqa1WR7tMHdrwhUx/view?usp=sharing>
 
 ## Credits
 
