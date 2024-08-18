@@ -120,7 +120,7 @@ module.exports = {
       }
 
       // Send a success message and the updated user as a JSON response
-      res.json({ message: 'New friends added!', user });
+      res.json({ message: 'New friend added!', user });
       // Catch any errors and send a 500 status with the error message
     } catch (err) {
       console.log(err);
