@@ -12,7 +12,7 @@
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-  - [Screenshots: \*\*\*](#screenshots-)
+  - [Screenshots:](#screenshots)
 - [Tests](#tests)
 - [Links \*\*\*](#links-)
 - [Credits](#credits)
@@ -125,33 +125,33 @@ After completing the installation, follow these steps to use the NoSQL Social Ne
 
 4. **API Route Testing**: For detailed instructions on testing API routes using Insomnia, refer to the "Tests" section of the `README.md`.
 
-### Screenshots: \*\*\*
+### Screenshots:
 
 The following screenshots demonstrate the Mongoose models synced with the MongoDB database in MongoDB Compass and examples of the API routes being tested in Insomnia:
 
 **MongoDB Compass showing the synced `socialmediaDB` database with `users` and `thoughts` models:**
 
-![Shows Mongoose models synced with the MongoDB database in MongoDB Compass.](assets/images/compass-database-screenshot.png)
+![Shows Mongoose models synced with the MongoDB database in MongoDB Compass.](assets/images/compass-database.png)
 
 **MongoDB Compass showing `users` model data within the `socialmediaDB` database:**
 
-![Shows users model within the database in MongoDB Compass.](assets/images/compass-users-screenshot.png)
+![Shows users model within the database in MongoDB Compass.](assets/images/compass-users.png)
 
 **MongoDB Compass showing `thoughts` model data within the `socialmediaDB` database:**
 
-![Shows thoughts model within the database in MongoDB Compass.](assets/images/compass-thoughts-screenshot.png)
+![Shows thoughts model within the database in MongoDB Compass.](assets/images/compass-thoughts.png)
 
 **GET route to retrieve all users:**
 
-![Shows GET route to retrieve all users.](assets/images/GET-users-screenshot.png)
+![Shows GET route to retrieve all users.](assets/images/GET-users.png)
 
 **POST route to create a new user:**
 
-![Shows POST route to create a new user.](assets/images/POST-user-screenshot.png)
+![Shows POST route to create a new user.](assets/images/POST-user.png)
 
 **GET route to retrieve all thoughts:**
 
-![Shows GET route to retrieve all thoughts.](assets/images/GET-thoughts-screenshot.png)
+![Shows GET route to retrieve all thoughts.](assets/images/GET-thoughts.png)
 
 ## Tests
 
