@@ -50,6 +50,7 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 - **Nodemon**: A development tool that automatically restarts the Node.js server when file changes are detected, improving development workflow and efficiency.
 - **Moment.js**: A popular JavaScript library used for parsing, validating, manipulating, and formatting dates and times, ensuring accurate and consistent handling of timestamp data throughout the application.
 - **Insomnia**: A powerful API client used to test and interact with the API endpoints, allowing developers to send HTTP requests and view responses in various formats.
+  **- MongoDB Compass**: A GUI tool for MongoDB that allows developers to visually explore and manage data, run queries, and optimize database performance.
 
 ## Features
 
@@ -88,20 +89,22 @@ To install the NoSQL Social Network API, follow these steps:
    git clone https://github.com/vaughanknouse/Social-Network-API.git
    ```
 
-2. **Navigate to the Project Directory**:
+2. **Install Node.js**: Ensure that the current version of Node.js is installed on your machine.
+
+3. **Navigate to the Project Directory**:
 
    ```bash
     cd Social-Network-API
    ```
 
-3. **Install Dependencies**:
+4. **Install Dependencies**:
 
    ```bash
    npm install
    ```
 
-4. **Install MongoDB**: Ensure that MongoDB is installed on your machine to initialize the database. If MongoDB is not yet installed, refer to the [MongoDB installation guide on The Full-Stack Blog](https://coding-boot-camp.github.io/full-stack/mongodb/how-to-install-mongodb).
-5. **Install Insomnia**: Ensure that Insomnia or a similar API client for route testing is also installed on your machine. If not yet installed, download Insomnia from the [Insomnia download page](https://insomnia.rest/download).
+5. **Install MongoDB**: Ensure that MongoDB is installed on your machine to initialize the database. If not, refer to the [MongoDB installation guide on The Full-Stack Blog](https://coding-boot-camp.github.io/full-stack/mongodb/how-to-install-mongodb).
+6. **Install Insomnia**: Ensure that Insomnia or a similar API client for route testing is also installed on your machine. If not yet installed, download Insomnia from the [Insomnia download page](https://insomnia.rest/download).
 
 ## Usage
 
@@ -114,13 +117,17 @@ After completing the installation, follow these steps to use the NoSQL Social Ne
    ```
 
    > [!NOTE]
-   > If you want the server to automatically restart whenever changes are saved, use the command `npm run dev` instead:
+   > If you want the server to automatically restart whenever changes are saved, use the command `npm run dev` instead.
 
-2. **API Route Testing**: For detailed instructions on testing API routes using Insomnia, refer to the "Tests" section of this `README.md`.
+2. **Verify Database Connection**: When you see the message `"Mongoose has successfully connected to the MongoDB database. API server running on port 3001!"`, open MongoDB Compass and connect to the MongoDB URI `mongodb://localhost:27017`. Verify that the `users` and `thoughts` Mongoose models are synced with the `socialNetworkDB` database.
+
+3. **Create Data**: As the project does not include seed data, use Insomnia to create data for `users` and `thoughts` manually.
+
+4. **API Route Testing**: For detailed instructions on testing API routes using Insomnia, refer to the "Tests" section of the `README.md`.
 
 ### Screenshots: \*\*\*
 
-The following screenshots demonstrate the Mongoose models synced with the MongoDB database in MongoDB Compass as well as examples of the API routes being tested in Insomnia:
+The following screenshots demonstrate the Mongoose models synced with the MongoDB database in MongoDB Compass and examples of the API routes being tested in Insomnia:
 
 **MongoDB Compass showing the synced `socialmediaDB` database with `users` and `thoughts` models:**
 
@@ -138,13 +145,13 @@ The following screenshots demonstrate the Mongoose models synced with the MongoD
 
 ![Shows GET route to retrieve all users.](assets/images/GET-users-screenshot.png)
 
-**POST route to add a friend to a user's friend list:**
+**POST route to create a new user:**
 
-![Shows POST route to add a friend to a user's friend list.](assets/images/POST-friend-screenshot.png)
+![Shows POST route to create a new user.](assets/images/POST-user-screenshot.png)
 
-**POST route to add a reaction to a thought:**
+**GET route to retrieve all thoughts:**
 
-![Shows POST route to add a reaction to a thought.](assets/images/POST-reaction-screenshot.png)
+![Shows GET route to retrieve all thoughts.](assets/images/GET-thoughts-screenshot.png)
 
 ## Tests
 
