@@ -58,7 +58,7 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 - **Nodemon**: A development tool that automatically restarts the Node.js server when file changes are detected, improving development workflow and efficiency.
 - **Moment.js**: A popular JavaScript library used for parsing, validating, manipulating, and formatting dates and times, ensuring accurate and consistent handling of timestamp data throughout the application.
 - **Insomnia**: A powerful API client used to test and interact with the API endpoints, allowing developers to send HTTP requests and view responses in various formats.
-  **- MongoDB Compass**: A GUI tool for MongoDB that allows developers to visually explore and manage data, run queries, and optimize database performance.
+- **MongoDB Compass**: A GUI tool for MongoDB that allows developers to visually explore and manage data, run queries, and optimize database performance.
 
 ## Features
 
